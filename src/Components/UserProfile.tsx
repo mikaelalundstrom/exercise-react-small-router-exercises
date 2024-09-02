@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom";
 
 function UserProfile() {
   let { id } = useParams();
-  console.log(id);
   return (
     <>
-      <h1>User {id} </h1>
+      <h1>User </h1>
+      <h2>Id: {id}</h2>
     </>
   );
 }
