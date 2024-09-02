@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/aboutt">Broken Link</Link>
-        <Link to="/old-home">Old Home</Link>
-        <Link to="/log-in">Log in</Link>
-        <Link to="/user/3">User 3</Link>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/aboutt">Broken Link</NavLink>
+        <NavLink to="/old-home">Old Home</NavLink>
+        <NavLink to="/log-in">Log in</NavLink>
+        <NavLink to="/user/3">User 3</NavLink>
       </nav>
     </>
   );

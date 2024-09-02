@@ -10,3 +10,13 @@ nav {
   justify-content: center;
   gap: 1rem;
 }
+
+a {
+  color: rgb(61, 61, 180);
+  text-decoration: none;
+}
+
+a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
