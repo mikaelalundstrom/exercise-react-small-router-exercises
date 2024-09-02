@@ -10,6 +10,7 @@ import NotFound from "./Pages/NotFound";
 import OldHome from "./Pages/OldHome";
 import LogIn from "./Pages/LogIn";
 import ProtectedRoute from "./Components/ProtectedRoute";
+import UserProfile from "./Components/UserProfile";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,8 @@ export const router = createBrowserRouter(
       </Route>
       <Route element={<LogIn />} path="log-in" />
       <Route element={<OldHome />} path="old-home" />
+      <Route element={<UserProfile />} path="user/:id" />
+
       <Route element={<NotFound />} path="*" />
     </Route>
   )
