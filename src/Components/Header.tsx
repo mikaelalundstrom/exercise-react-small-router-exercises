@@ -5,12 +5,9 @@ function Header() {
     <>
       <nav>
         <Link to="/">Home</Link>
-      </nav>
-      <nav>
         <Link to="/about">About</Link>
-      </nav>
-      <nav>
         <Link to="/contact">Contact</Link>
+        <Link to="/dashboard">Dashboard</Link>
       </nav>
     </>
   );
