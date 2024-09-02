@@ -6,6 +6,8 @@ import Contact from "./Pages/Contact";
 import Dashboard from "./Pages/Dashboard";
 import Stats from "./Components/Stats";
 import Settings from "./Components/Settings";
+import NotFound from "./Pages/NotFound";
+import OldHome from "./Pages/OldHome";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +19,8 @@ export const router = createBrowserRouter(
         <Route element={<Stats />} path="stats" />
         <Route element={<Settings />} path="settings" />
       </Route>
+      <Route element={<OldHome />} path="old-home" />
+      <Route element={<NotFound />} path="*" />
     </Route>
   )
 );
