@@ -8,6 +8,8 @@ import Stats from "./Components/Stats";
 import Settings from "./Components/Settings";
 import NotFound from "./Pages/NotFound";
 import OldHome from "./Pages/OldHome";
+import LogIn from "./Pages/LogIn";
+import ProtectedRoute from "./Components/ProtectedRoute";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,10 +17,13 @@ export const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route element={<About />} path="about" />
       <Route element={<Contact />} path="contact" />
-      <Route element={<Dashboard />} path="dashboard">
-        <Route element={<Stats />} path="stats" />
-        <Route element={<Settings />} path="settings" />
+      <Route element={<ProtectedRoute />}>
+        <Route element={<Dashboard />} path="dashboard">
+          <Route element={<Stats />} path="stats" />
+          <Route element={<Settings />} path="settings" />
+        </Route>
       </Route>
+      <Route element={<LogIn />} path="log-in" />
       <Route element={<OldHome />} path="old-home" />
       <Route element={<NotFound />} path="*" />
     </Route>
