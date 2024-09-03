@@ -1,11 +1,11 @@
-function Step1() {
+export function Step1() {
   return (
     <>
       <h2>Personal Information</h2>
-      <label htmlFor="name">Name: </label>
-      <input id="name" type="text" />
+      <div>
+        <label htmlFor="name">Name: </label>
+        <input id="name" type="text" />
+      </div>
     </>
   );
 }
-
-export default Step1;

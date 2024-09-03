@@ -1,20 +1,18 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
-import App from "./Components/App";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Dashboard from "./Pages/Dashboard";
-import Stats from "./Components/Stats";
-import Settings from "./Components/Settings";
-import NotFound from "./Pages/NotFound";
-import OldHome from "./Pages/OldHome";
-import LogIn from "./Pages/LogIn";
-import ProtectedRoute from "./Components/ProtectedRoute";
-import UserProfile from "./Components/UserProfile";
-import SignUp from "./Components/SignUpForm/SignUp";
-import Step1 from "./Components/SignUpForm/Step1";
-import Step2 from "./Components/SignUpForm/Step2";
-import Step3 from "./Components/SignUpForm/Step3";
+import { App, ProtectedRoute } from "./Components";
+import {
+  About,
+  Contact,
+  Dashboard,
+  Home,
+  LogIn,
+  NotFound,
+  OldHome,
+  Settings,
+  Stats,
+  UserProfile,
+} from "./Components/Pages";
+import { SignUp, Step1, Step2, Step3 } from "./Components/SignUpForm";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(

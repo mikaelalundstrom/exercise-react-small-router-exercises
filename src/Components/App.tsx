@@ -1,16 +1,17 @@
 import { useState } from "react";
-import "./App.css";
-import Header from "./Header";
-import { Outlet } from "react-router-dom";
 
-function App() {
+import { Outlet } from "react-router-dom";
+import { LoginContext } from "../Context/LoginContext";
+import { Header } from "./Header";
+
+export function App() {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   return (
     <>
-      <Header />
-      <Outlet context={[isLoggedIn, setIsLoggedIn]} />
+      <LoginContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
+        <Header />
+        <Outlet />
+      </LoginContext.Provider>
     </>
   );
 }
-
-export default App;

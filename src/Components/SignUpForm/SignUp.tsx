@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 
-function SignUp() {
+export function SignUp() {
   const [step, setStep] = useState<number>(1);
 
   let navigate = useNavigate();
@@ -47,5 +47,3 @@ function SignUp() {
     </>
   );
 }
-
-export default SignUp;

@@ -17,27 +17,31 @@ nav {
 }
 
 a {
-  color: rgb(61, 61, 180);
+  color: #3d3db4;
   text-decoration: none;
 }
 
 a.active {
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: underline 3px rgb(255, 99, 185);
 }
 
-.sign-up .nav-buttons {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
+button {
+  margin: 2rem 0;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  background-color: #3d3db4;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
 
-  .back {
-    grid-column: 1;
-  }
+h1 {
+  margin-top: 4rem;
+}
 
-  .next {
-    grid-column: 2;
-  }
+header {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #3d3db4;
 }

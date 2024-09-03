@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  align-items: center;
+
+  div {
+    display: flex;
+    gap: 1rem;
+  }
+}
+.sign-up .nav-buttons {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  .back {
+    grid-column: 1;
+  }
+
+  .next {
+    grid-column: 2;
+  }
+}
