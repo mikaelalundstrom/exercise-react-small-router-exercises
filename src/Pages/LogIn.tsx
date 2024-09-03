@@ -4,7 +4,7 @@ function LogIn() {
   const [isLoggedIn, setIsLoggedIn] = useOutletContext();
   return (
     <>
-      <h2>Log In</h2>
+      <h1>Log In</h1>
       <button onClick={() => setIsLoggedIn((prev: boolean) => !prev)}>
         {" "}
         {isLoggedIn ? "Log out" : "Log in"}{" "}

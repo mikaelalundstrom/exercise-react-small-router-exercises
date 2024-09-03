@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -19,4 +24,20 @@ a {
 a.active {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.sign-up .nav-buttons {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  .back {
+    grid-column: 1;
+  }
+
+  .next {
+    grid-column: 2;
+  }
 }

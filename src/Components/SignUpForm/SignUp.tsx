@@ -21,19 +21,29 @@ function SignUp() {
   return (
     <>
       <h1>Sign Up</h1>
-      <nav>
-        <NavLink to="step-1">Step 1</NavLink>
-        <NavLink to="step-2">Step 2</NavLink>
-        <NavLink to="step-3">Step 3</NavLink>
-      </nav>
-      <form>
-        <Outlet />
-      </form>
+      <section className="sign-up">
+        <nav>
+          <NavLink to="step-1">Step 1</NavLink>
+          <NavLink to="step-2">Step 2</NavLink>
+          <NavLink to="step-3">Step 3</NavLink>
+        </nav>
+        <form>
+          <Outlet />
+        </form>
 
-      <nav>
-        {step === 1 ? null : <button onClick={handleBackward}>Back</button>}
-        {step === 3 ? null : <button onClick={handleForward}>Next</button>}
-      </nav>
+        <nav className="nav-buttons">
+          {step === 1 ? null : (
+            <button onClick={handleBackward} className="back">
+              Back
+            </button>
+          )}
+          {step === 3 ? null : (
+            <button onClick={handleForward} className="next">
+              Next
+            </button>
+          )}
+        </nav>
+      </section>
     </>
   );
 }
